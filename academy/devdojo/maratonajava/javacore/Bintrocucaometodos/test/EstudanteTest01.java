@@ -1,0 +1,24 @@
+package academy.devdojo.maratonajava.javacore.Bintrocucaometodos.test;
+
+import academy.devdojo.maratonajava.javacore.Bintrocucaometodos.domain.Estudante;
+import academy.devdojo.maratonajava.javacore.Bintrocucaometodos.domain.ImpressoraEstudante;
+
+public class EstudanteTest01 {
+    public static void main(String[] args) {
+        Estudante estudante1 = new Estudante();
+        Estudante estudante2 = new Estudante();
+        ImpressoraEstudante impressora = new ImpressoraEstudante();
+        estudante1.name = "Heitor";
+        estudante1.age = 22;
+        estudante1.sex = 'M';
+
+        impressora.impressoraEstudante(estudante1);
+        System.out.println("---------");
+        estudante2.name = "Ramos";
+        estudante2.age = 32;
+        estudante2.sex = 'F';
+        impressora.impressoraEstudante(estudante2);
+
+
+    }
+}
