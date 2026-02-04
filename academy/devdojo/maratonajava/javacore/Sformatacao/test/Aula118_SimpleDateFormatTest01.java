@@ -6,13 +6,9 @@ import java.util.Date;
 
 public class Aula118_SimpleDateFormatTest01 {
     public static void main(String[] args) {
-        String pattern = "'Goiânia' dd 'de' MMMM 'de' yyyy";
+        String pattern = "'Goiânia,' dd'/'MM'/'yyyy 'às' H':'mm':'s";
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         System.out.println(sdf.format(new Date()));
-        try {
-            System.out.println(sdf.parse("Goiânia 30 de janeiro de 2026"));
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
+
     }
 }
