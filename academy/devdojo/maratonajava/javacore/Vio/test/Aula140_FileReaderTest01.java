@@ -10,6 +10,8 @@ public class Aula140_FileReaderTest01 {
         File file = new File("file.txt");
         try (FileReader fr = new FileReader(file)){
 //            char[] in = new char[30];
+//            int size = fr.read(in);
+//            System.out.println(size);
 //            fr.read(in);
 //            for (char c : in){
 //                System.out.print(c);
@@ -18,7 +20,6 @@ public class Aula140_FileReaderTest01 {
             while ((i=fr.read()) != -1){
                 System.out.print((char)i);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
