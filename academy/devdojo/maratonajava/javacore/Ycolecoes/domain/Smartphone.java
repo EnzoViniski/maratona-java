@@ -1,20 +1,34 @@
 package academy.devdojo.maratonajava.javacore.Ycolecoes.domain;
 
 public class Smartphone {
-    private String cerealNumber;
+    private String serialNumber;
     private String marca;
 
-    public Smartphone(String cerealNumber, String marca) {
-        this.cerealNumber = cerealNumber;
+    public Smartphone(String serialNumber, String marca) {
+        this.serialNumber = serialNumber;
         this.marca = marca;
     }
 
-    public String getCerealNumber() {
-        return cerealNumber;
+    // Reflexivo: x.equals(x) tem que ser true para tudo que for diferente de null
+    // Simétric: para x e y diferentes de null, se x.equals(y) == true logo y.equals(x) == true
+    // Transitividade: para x,y,z diferentes de null, se x.equals(y) == true e x.equals(z) == true então y.equals(z) == true
+    // Consistente: x.equals(x) sempre retorna true se x for diferente de null
+    // para x diferente de nul, x.equals(null) tem que retornar false
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (this.getClass() != obj.getClass()) return false;
+        Smartphone smartphone = (Smartphone) obj;
+        return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
     }
 
-    public void setCerealNumber(String cerealNumber) {
-        this.cerealNumber = cerealNumber;
+    public String getCerealNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 
     public String getMarca() {
