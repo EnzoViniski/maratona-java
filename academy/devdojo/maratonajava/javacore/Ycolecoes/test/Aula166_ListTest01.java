@@ -8,7 +8,7 @@ public class Aula166_ListTest01 {
         List<String> nome = new ArrayList<>();
         nome.add("William");
         nome.add("DevDojo Academy");
-        for (String nomes : nome){
+        for (String nomes : nome) {
             System.out.println(nomes);
         }
         System.out.println("-----------");
