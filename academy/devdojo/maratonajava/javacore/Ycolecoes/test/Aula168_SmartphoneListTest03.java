@@ -5,7 +5,7 @@ import academy.devdojo.maratonajava.javacore.Ycolecoes.domain.Smartphone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aula168_ListTest02 {
+public class Aula168_SmartphoneListTest03 {
     public static void main(String[] args) {
         Smartphone s1 = new Smartphone("2222", "iPhone");
         Smartphone s2 = new Smartphone("3333", "Pixel");
