@@ -44,7 +44,7 @@ public class Manga implements Comparable<Manga> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
     }
 
     public int getQuantidade() {
