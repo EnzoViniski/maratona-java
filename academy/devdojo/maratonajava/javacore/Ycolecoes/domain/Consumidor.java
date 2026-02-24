@@ -9,7 +9,7 @@ public class Consumidor {
 
     public Consumidor(String nome) {
         this.nome = nome;
-        this.id = ThreadLocalRandom.current().nextLong(0, 100_000);
+        this.id = ThreadLocalRandom.current().nextLong(0, 100_000); // Essa função cria ID's em Long de 0 a 100 mil
     }
 
     @Override
