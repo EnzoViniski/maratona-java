@@ -30,7 +30,7 @@ public class Aula185_WildcardTest02 {
 
         printConsultaAnimal(animals);
     }
-    // Wildcard sintaxze : <? extens AlgumaClasse>
+    // Wildcard sintaxe : <? extens AlgumaClasse>
     // O "extends" sempre deve aparecer, independente de a classe ser uma classe abstrata ou uma interface, a não ser que seja usado o super. Ela serve para implementar todas as classes após a classe definida (nesse caso Animals, Cachorro e Gato) porém apenas para leitura e não para instanciacao
     public static void printConsulta(List<? extends Animals> animals) {
         for (Animals animal : animals) {
