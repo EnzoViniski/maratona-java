@@ -13,4 +13,8 @@ public class Aula188_MetodoGenericoTest01 {
     private static <T> List<T> criarArrayDeUmObjeto(T t){
         return List.of(t);
     }
+
+//    private static <T extends Comparable<T>> List<T> criarArrayDeUmObjeto(T t){
+//        return List.of(t);
+//    }
 }
