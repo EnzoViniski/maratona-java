@@ -1,8 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Zgenerics.service;
 
-import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Carro;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class RentalService<T> {
