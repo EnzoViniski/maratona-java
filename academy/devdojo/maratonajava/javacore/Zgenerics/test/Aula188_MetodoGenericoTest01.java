@@ -2,7 +2,6 @@ package academy.devdojo.maratonajava.javacore.Zgenerics.test;
 
 import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Barco;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Aula188_MetodoGenericoTest01 {
