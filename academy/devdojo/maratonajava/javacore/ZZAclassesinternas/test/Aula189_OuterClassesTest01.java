@@ -1,22 +1,22 @@
 package academy.devdojo.maratonajava.javacore.ZZAclassesinternas.test;
 
 public class Aula189_OuterClassesTest01 {
-    private String name = "Monkey D.Luffy";
+    private String name = "Monkey D. Luffy";
 
     class Inner {
-        public void printOuterClassAtribute(){
+        public void printOuterClassAttribute(){
             System.out.println(name);
             System.out.println(this);
-            System.out.println();
+            System.out.println(Aula189_OuterClassesTest01.this);
         }
     }
 
     public static void main(String[] args) {
-        Aula189_OuterClassesTest01  outerClass = new Aula189_OuterClassesTest01();
-        Inner inner = outerClass.new Inner();
+        Aula189_OuterClassesTest01 outerClassesTest01 = new Aula189_OuterClassesTest01();
+        Inner inner = outerClassesTest01.new Inner();
         Inner inner2 = new Aula189_OuterClassesTest01().new Inner();
-
-        inner.printOuterClassAtribute();
-        inner2.printOuterClassAtribute();
+        inner.printOuterClassAttribute();
+        inner2.printOuterClassAttribute();
     }
 }
+
