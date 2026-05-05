@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b4e78c47-b01b-4714-9884-75ad60d84ca0" name="Changes" comment="Add : novas aulas">
+      <change afterPath="$PROJECT_DIR$/academy/devdojo/maratonajava/javacore/Wnio/test/Aula158_ZipOutputStreamTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pasta/subasta1/subsubpasta1/subsubarquivo1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pasta/subasta1/subsubpasta1/subsubarquivo1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pasta/subasta1/subsubpasta1/subsubarquivo2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pasta/subasta1/subsubpasta1/subsubarquivo2.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EnzoViniski&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/EnzoViniski/maratona-java.git&quot;,
+    &quot;accountId&quot;: &quot;ae61cf0c-0cc6-480b-92e3-94c758fdb143&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="38B6uSpCcanSEhhNTxgDTKM1MJ0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AnimeTest01.executor": "Run",
+    "Application.Aula100_RunTimeExceptionTest03.executor": "Run",
+    "Application.Aula101_RunTimeExceptionTest04.executor": "Run",
+    "Application.Aula103TryWithResourcesTest01.executor": "Run",
+    "Application.Aula104_LoginInvalidoExceptionTest01.executor": "Run",
+    "Application.Aula105_SobrescritaComExceptionTest01.executor": "Run",
+    "Application.Aula107_WrapperTest02.executor": "Run",
+    "Application.Aula108_StringTest01.executor": "Run",
+    "Application.Aula108_StringTest02.executor": "Run",
+    "Application.Aula110_StringPerformanceTest01.executor": "Run",
+    "Application.Aula111_StringBuilderTest01.executor": "Run",
+    "Application.Aula112_DateTest01.executor": "Run",
+    "Application.Aula113_CalendarTest01.executor": "Run",
+    "Application.Aula114_DateFormatTest01.executor": "Run",
+    "Application.Aula115_LocaleTest01.executor": "Run",
+    "Application.Aula116_LocaleTest02.executor": "Run",
+    "Application.Aula116_NumberFormat.executor": "Run",
+    "Application.Aula116_NumberFormatTest01.executor": "Run",
+    "Application.Aula117_NumberFormatTest02.executor": "Run",
+    "Application.Aula118_LocalDateTest01.executor": "Run",
+    "Application.Aula118_SimpleDateFormatTest01.executor": "Run",
+    "Application.Aula119_LocalDateTest01.executor": "Run",
+    "Application.Aula120_LocalTimeTest01.executor": "Run",
+    "Application.Aula121_LocalDateTimeTest01.executor": "Run",
+    "Application.Aula122_InstantTest01.executor": "Run",
+    "Application.Aula123_DurationTest01.executor": "Run",
+    "Application.Aula124_PeriodTest01.executor": "Run",
+    "Application.Aula125_ChronoUnitTest01.executor": "Run",
+    "Application.Aula126_TemporalAdjustersTest01.executor": "Run",
+    "Application.Aula127_TemporalAdjusterTest01.executor": "Run",
+    "Application.Aula128_ZoneTest01.executor": "Run",
+    "Application.Aula129_DataFormatterTest01.executor": "Run",
+    "Application.Aula130_ResourceBundleTest01.executor": "Run",
+    "Application.Aula131_PatternMatcherTest01.executor": "Run",
+    "Application.Aula132_PatternMatcherTest02.executor": "Run",
+    "Application.Aula133_PatternMatcherTest03.executor": "Run",
+    "Application.Aula134_PatternMatcherTest04.executor": "Run",
+    "Application.Aula135_PatternMatcherTest05.executor": "Run",
+    "Application.Aula137_ScannerTest01.executor": "Run",
+    "Application.Aula137_ScannerTest02.executor": "Run",
+    "Application.Aula138_FileTest01.executor": "Run",
+    "Application.Aula139_FileWriterTest01.executor": "Run",
+    "Application.Aula140_FileReaderTest01.executor": "Run",
+    "Application.Aula141_BufferedWriterTest01.executor": "Run",
+    "Application.Aula142_BufferedReaderTest01.executor": "Run",
+    "Application.Aula143_FileTest02.executor": "Run",
+    "Application.Aula144_PathTest01.executor": "Run",
+    "Application.Aula145_PathTest02.executor": "Run",
+    "Application.Aula146_NormalizeTest01.executor": "Run",
+    "Application.Aula147_PathTest03.executor": "Run",
+    "Application.Aula148_RelativizeTest01.executor": "Debug",
+    "Application.Aula149_BasicFileAttributesTest01.executor": "Run",
+    "Application.Aula150_BasicFileAttributesTest02.executor": "Run",
+    "Application.Aula151_DosFileAttributesTest01.executor": "Run",
+    "Application.Aula152_PosixFileAttributesTest01.executor": "Run",
+    "Application.Aula153_DirectoryStreamTest01.executor": "Run",
+    "Application.Aula154_SimpleFileVisitorTest01.executor": "Run",
+    "Application.Aula155_SimpleFileVisitorTest02.executor": "Run",
+    "Application.Aula156_PathMatcherTest01.executor": "Run",
+    "Application.Aula157_PathMatcherTest02.executor": "Run",
+    "Application.Aula158_ZipOutputStreamTest01.executor": "Run",
+    "Application.Aula95_StackOverFlowTest01.executor": "Run",
+    "Application.Aula97_ExceptionTest01.executor": "Run",
+    "Application.Aula98_RuntimeExceptionTeste02.executor": "Run",
+    "Application.Aula99_ExceptionTest02.executor": "Run",
+    "Application.BlocoDeNotasTest01.executor": "Run",
+    "Application.CarroTest01.executor": "Run",
+    "Application.ChronoUnitTest01MariaDuda.executor": "Run",
+    "Application.ClienteTest01.executor": "Run",
+    "Application.DataLoaderTest01.executor": "Run",
+    "Application.EcomerceTest01.executor": "Run",
+    "Application.EscolaTest01.executor": "Run",
+    "Application.FuncionarioTest01.executor": "Run",
+    "Application.HerancaTest01.executor": "Run",
+    "Application.HerancaTest02.executor": "Run",
+    "Application.JogadorTest01.executor": "Run",
+    "Application.JogadorTest02.executor": "Run",
+    "Application.JogadorTest03.executor": "Run",
+    "Application.LeituraDesafio.executor": "Run",
+    "Application.LeituraDoTecladoTest01.executor": "Run",
+    "Application.LeituraDoTecladoTest02.executor": "Run",
+    "Application.ProdutoTest01.executor": "Run",
+    "Application.ProdutoTest02.executor": "Run",
+    "Application.RepositorioTeste.executor": "Run",
+    "Application.RunTimeExceptionTest01.executor": "Run",
+    "Application.SeminariosTest01.executor": "Run",
+    "Application.SmartHomeTest01.executor": "Run",
+    "Application.StackOverFlowTest01.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test.AnimeTest01.executor": "Run",
+    "Application.academy.devdojo.maratonajava.javacore.Gassociacao.test.SeminariosTest01.executor": "Run",
+    "Application.academy.devdojo.maratonajava.javacore.Lclassesabstratas.test.FuncionarioTest01.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/enzoviniski/IdeaProjects/untitled/src/pasta/subasta1/subsubpasta1",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pasta/subasta1/subsubpasta1" />
+      <recent name="$PROJECT_DIR$/pasta/subasta2" />
+      <recent name="$PROJECT_DIR$/academy/devdojo/maratonajava/javacore/Wnio/test" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="academy.devdojo.maratonajava.javacore.Wnio.test" />
+      <recent name="academy.devdojo.maratonajava.javacore.Vio.test" />
+      <recent name="academy.devdojo.maratonajava.javacore.Uregex.test" />
+      <recent name="academy.devdojo.maratonajava.javacore.Sformatacao.test" />
+      <recent name="academy.devdojo.maratonajava.javacore.Pwrapper.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Aula158_ZipOutputStreamTest01">
+    <configuration name="Aula154_SimpleFileVisitorTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Wnio.test.Aula154_SimpleFileVisitorTest01" />
+      <module name="maratona-java-aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Aula155_SimpleFileVisitorTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Wnio.test.Aula155_SimpleFileVisitorTest02" />
+      <module name="maratona-java-aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Aula156_PathMatcherTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Wnio.test.Aula156_PathMatcherTest01" />
+      <module name="maratona-java-aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Aula157_PathMatcherTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Wnio.test.Aula157_PathMatcherTest02" />
+      <module name="maratona-java-aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Aula158_ZipOutputStreamTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.maratonajava.javacore.Wnio.test.Aula158_ZipOutputStreamTest01" />
+      <module name="maratona-java-aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.maratonajava.javacore.Wnio.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="maratona-java-aulas" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="maratona-java-aulas" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Aula158_ZipOutputStreamTest01" />
+        <item itemvalue="Application.Aula157_PathMatcherTest02" />
+        <item itemvalue="Application.Aula156_PathMatcherTest01" />
+        <item itemvalue="Application.Aula155_SimpleFileVisitorTest02" />
+        <item itemvalue="Application.Aula154_SimpleFileVisitorTest01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4e78c47-b01b-4714-9884-75ad60d84ca0" name="Changes" comment="" />
+      <created>1768260839596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768260839596</updated>
+      <workItem from="1768260840712" duration="70000" />
+      <workItem from="1768261086945" duration="136000" />
+      <workItem from="1768261252420" duration="46609000" />
+      <workItem from="1768860032361" duration="3016000" />
+      <workItem from="1768863062035" duration="15000" />
+      <workItem from="1768863100322" duration="46214000" />
+      <workItem from="1769026679120" duration="34000" />
+      <workItem from="1769088589410" duration="12190000" />
+      <workItem from="1769172853515" duration="6454000" />
+      <workItem from="1769201801371" duration="663000" />
+      <workItem from="1769274893405" duration="7404000" />
+      <workItem from="1769290395925" duration="62000" />
+      <workItem from="1769348037833" duration="6574000" />
+      <workItem from="1769384014130" duration="8000" />
+      <workItem from="1769429058663" duration="12919000" />
+      <workItem from="1769517169265" duration="12116000" />
+      <workItem from="1769556995526" duration="3649000" />
+      <workItem from="1769606137221" duration="323000" />
+      <workItem from="1769606564251" duration="63000" />
+      <workItem from="1769632443082" duration="11000" />
+      <workItem from="1769690115780" duration="8620000" />
+      <workItem from="1769778451621" duration="9112000" />
+      <workItem from="1769812004733" duration="4962000" />
+      <workItem from="1770141527719" duration="23000" />
+      <workItem from="1770167122109" duration="23109000" />
+      <workItem from="1770294230868" duration="10724000" />
+      <workItem from="1770382632054" duration="10764000" />
+      <workItem from="1770727432634" duration="7216000" />
+      <workItem from="1770812716441" duration="8546000" />
+      <workItem from="1770841471365" duration="24006000" />
+      <workItem from="1771019569668" duration="5669000" />
+      <workItem from="1771188350124" duration="5342000" />
+      <workItem from="1771245414577" duration="1729000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1769434778488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769434778488</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1769782396425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769782396425</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770215960755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770215960755</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770337260201</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770337260201</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770660330658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770660330658</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770755792713</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770755792714</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770814568248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1770814568248</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770815881928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770815881928</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1770921349799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1770921349799</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1771015160743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1771015160743</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1771165984844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1771165984844</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add : novas aulas">
+      <option name="closed" value="true" />
+      <created>1771197073779</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1771197073779</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add : novas aulas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add : novas aulas" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
