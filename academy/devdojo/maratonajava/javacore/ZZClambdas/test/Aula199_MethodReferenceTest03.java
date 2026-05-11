@@ -17,6 +17,7 @@ public class Aula199_MethodReferenceTest03 {
         Integer num = numStringToInteger.apply("10");
         System.out.println(num);
 
+
         BiPredicate<List<String>, String> checkName = List::contains;
         System.out.println(checkName.test(list,"Enzo"));
     }
