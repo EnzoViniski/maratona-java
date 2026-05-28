@@ -11,7 +11,7 @@ public class LightNovel {
 
     @Override
     public String toString() {
-        return "Aula203_LightNovel{" +
+        return "LightNovel{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
                 '}';
