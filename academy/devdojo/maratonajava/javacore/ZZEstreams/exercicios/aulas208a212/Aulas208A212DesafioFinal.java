@@ -1,0 +1,191 @@
+package academy.devdojo.maratonajava.javacore.ZZEstreams.exercicios.aulas208a212;
+
+import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.LightNovel;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class Aulas208A212DesafioFinal {
+    private static final Path ARQUIVO_BASE = Paths.get("file.txt");
+
+    private static final List<List<ItemLeitura>> lotes = new ArrayList<>(List.of(
+            List.of(
+                    new ItemLeitura("Maria", new LightNovel("Naruto", 5.99), 2, List.of("ninja", "acao")),
+                    new ItemLeitura("Duda", new LightNovel("Dragon Ball", 2.99), 1, List.of("luta", "classico"))
+            ),
+            List.of(
+                    new ItemLeitura("Enzo", new LightNovel("Goku No Hero", 3.99), 3, List.of("heroi", "luta")),
+                    new ItemLeitura("Ana", new LightNovel("No Game No Life", 4.99), 2, List.of("jogo", "aventura"))
+            ),
+            List.of(
+                    new ItemLeitura("Pedro", new LightNovel("Amazing Spider Man", 0.99), 5, List.of("heroi", "promocao")),
+                    new ItemLeitura("Julia", new LightNovel("Full Metal Panic", 6.49), 1, List.of("mecha", "acao"))
+            )
+    ));
+
+    private static final int[] avaliacoesDaSemana = {8, 10, 6, 9, 7, 5, 10};
+
+    public static void main(String[] args) throws IOException {
+        System.out.println("1) Dias da campanha:");
+        System.out.println(gerarDiasDaCampanha(1, 7));
+
+        System.out.println("2) Fibonacci para metas de leitura:");
+        System.out.println(gerarMetasFibonacci(8));
+
+        System.out.println("3) Codigos aleatorios de simulado:");
+        System.out.println(gerarCodigosDeSimulado(5, 1000, 9999));
+
+        System.out.println("4) Todos os itens possuem quantidade positiva?");
+        System.out.println(todosOsItensPossuemQuantidadePositiva());
+
+        System.out.println("5) Maior item pela tag heroi:");
+        System.out.println(buscarMaiorItemPorTag("heroi"));
+
+        System.out.println("6) Faturamento pela tag heroi:");
+        System.out.println(calcularFaturamentoPorTag("heroi"));
+
+        System.out.println("7) Soma das avaliacoes acima do minimo:");
+        System.out.println(somarAvaliacoesAcimaDe(7));
+
+        System.out.println("8) Linhas do arquivo com Java:");
+        System.out.println(contarLinhasDoArquivoCom(ARQUIVO_BASE, "Java"));
+
+        System.out.println("9) Resumo final:");
+        System.out.println(criarResumoFinal("heroi", 1, 7, 8, ARQUIVO_BASE, "Java"));
+    }
+
+    private static List<Integer> gerarDiasDaCampanha(int diaInicial, int diaFinal) {
+        // TODO 01:
+        // Use IntStream.rangeClosed para gerar os dias da campanha.
+        // Colete os dias em List<Integer>.
+        return List.of();
+    }
+
+    private static List<Integer> gerarMetasFibonacci(int quantidade) {
+        // TODO 02:
+        // Use Stream.iterate com int[] para gerar pares da sequencia de Fibonacci.
+        // Limite pela quantidade recebida.
+        // Transforme cada par no primeiro numero do par.
+        // Colete em List<Integer>.
+        return List.of();
+    }
+
+    private static List<Integer> gerarCodigosDeSimulado(int quantidade, int menorCodigo, int maiorCodigo) {
+        // TODO 03:
+        // Use ThreadLocalRandom.current().
+        // Use Stream.generate para criar codigos entre menorCodigo e maiorCodigo.
+        // Limite pela quantidade recebida e colete em List<Integer>.
+        return List.of();
+    }
+
+    private static boolean todosOsItensPossuemQuantidadePositiva() {
+        // TODO 04:
+        // Abra todos os lotes com flatMap.
+        // Use allMatch para validar se toda quantidade e maior que zero.
+        return false;
+    }
+
+    private static Optional<ItemLeitura> buscarMaiorItemPorTag(String tag) {
+        // TODO 05:
+        // Abra todos os lotes com flatMap.
+        // Filtre itens que contem a tag recebida.
+        // Use max com Comparator.comparing para buscar o maior subtotal.
+        return Optional.empty();
+    }
+
+    private static double calcularFaturamentoPorTag(String tag) {
+        // TODO 06:
+        // Abra todos os lotes com flatMap.
+        // Filtre itens que contem a tag recebida.
+        // Transforme cada item em subtotal com mapToDouble.
+        // Some com sum.
+        return 0;
+    }
+
+    private static int somarAvaliacoesAcimaDe(int notaMinima) {
+        // TODO 07:
+        // Use Arrays.stream no array avaliacoesDaSemana.
+        // Filtre notas maiores que notaMinima.
+        // Some usando reduce.
+        return 0;
+    }
+
+    private static long contarLinhasDoArquivoCom(Path arquivo, String trecho) throws IOException {
+        // TODO 08:
+        // Use Files.lines dentro de try-with-resources.
+        // Conte as linhas que contem o trecho recebido.
+        return 0;
+    }
+
+    private static String criarResumoFinal(String tag, int diaInicial, int diaFinal, int quantidadeMetas,
+                                           Path arquivo, String trecho) throws IOException {
+        // TODO 09:
+        // Monte uma String no formato:
+        // Tag: <tag> | dias: <dias> | metas: <metas> | faturamento: <total> | linhas: <total>
+        //
+        // Regras:
+        // - Os dias devem vir de gerarDiasDaCampanha.
+        // - As metas devem vir de gerarMetasFibonacci.
+        // - O faturamento deve vir de calcularFaturamentoPorTag.
+        // - As linhas devem vir de contarLinhasDoArquivoCom.
+        // - Use String.valueOf ou o toString das listas, sem criar loops manuais.
+        return "";
+    }
+
+    private static class ItemLeitura {
+        private final String comprador;
+        private final LightNovel lightNovel;
+        private final int quantidade;
+        private final List<String> tags;
+
+        private ItemLeitura(String comprador, LightNovel lightNovel, int quantidade, List<String> tags) {
+            this.comprador = comprador;
+            this.lightNovel = lightNovel;
+            this.quantidade = quantidade;
+            this.tags = tags;
+        }
+
+        public String getComprador() {
+            return comprador;
+        }
+
+        public LightNovel getLightNovel() {
+            return lightNovel;
+        }
+
+        public int getQuantidade() {
+            return quantidade;
+        }
+
+        public List<String> getTags() {
+            return tags;
+        }
+
+        public double getSubtotal() {
+            return lightNovel.getPrice() * quantidade;
+        }
+
+        @Override
+        public String toString() {
+            return "ItemLeitura{" +
+                    "comprador='" + comprador + '\'' +
+                    ", lightNovel=" + lightNovel +
+                    ", quantidade=" + quantidade +
+                    ", tags=" + tags +
+                    ", subtotal=" + getSubtotal() +
+                    '}';
+        }
+    }
+}
