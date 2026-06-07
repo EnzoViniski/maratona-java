@@ -6,11 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -52,6 +48,13 @@ public class Aulas208A212Exercicio02Medio {
 
     private static List<String> buscarLinhasQueContem(Path arquivo, String trecho) throws IOException {
 
+        try ( Stream<String> lines = Files.lines(arquivo)) {
+            return lines.filter(l -> l.contains(trecho))
+                    .sorted()
+                    .collect(Collectors.toList());
+        } catch (IOException e){
+            e.printStackTrace();
+        }
         // TODO 01:
         // Use Files.lines dentro de try-with-resources.
         // Filtre linhas que contem o trecho recebido.
@@ -60,6 +63,15 @@ public class Aulas208A212Exercicio02Medio {
     }
 
     private static long contarPalavrasDistintasDoArquivo(Path arquivo, int tamanhoMinimo) throws IOException {
+        try (Stream<String> lines = Files.lines(arquivo)) {
+            return lines.map(l -> l.split(" "))
+                    .flatMap(Arrays::stream)
+                    .filter(l -> l.length() >= tamanhoMinimo)
+                    .distinct()
+                    .count();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
         // TODO 02:
         // Use Files.lines dentro de try-with-resources.
         // Quebre cada linha em palavras com split(" ").
@@ -70,34 +82,46 @@ public class Aulas208A212Exercicio02Medio {
     }
 
     private static List<Integer> gerarSequenciaImpar(int primeiroNumero, int quantidade) {
+        return Stream.iterate(primeiroNumero, n -> n + 2)
+                .limit(quantidade)
+                .collect(Collectors.toList());
         // TODO 03:
         // Use Stream.iterate iniciando em primeiroNumero.
         // Some 2 a cada novo numero.
         // Limite pela quantidade recebida e colete em List<Integer>.
-        return List.of();
-    }
+        }
 
     private static int somarPaginasAcimaDe(int paginaMinima) {
+        return Arrays.stream(paginasLidas)
+                .filter(l -> l > paginaMinima)
+                .reduce(Integer::sum)
+                .getAsInt();
         // TODO 04:
         // Use Arrays.stream no array paginasLidas.
         // Filtre apenas valores maiores que paginaMinima.
         // Some usando reduce com Integer::sum.
-        return 0;
     }
 
     private static double calcularTotalDasLightNovelsAcimaDe(double precoMinimo) {
+        return lightNovels.stream().mapToDouble(LightNovel::getPrice)
+                .filter(p -> p > precoMinimo)
+                .sum();
         // TODO 05:
         // Use mapToDouble para transformar LightNovel em preco.
         // Filtre precos maiores que precoMinimo.
         // Use sum para calcular o total.
-        return 0;
     }
 
     private static Optional<LightNovel> buscarPrimeiraLightNovelPorTrecho(String trecho) {
+
+        return lightNovels.stream()
+                .filter(ln -> ln.getTitle().contains(trecho))
+                .sorted(Comparator.comparing(LightNovel::getTitle))
+                .findFirst();
+
         // TODO 06:
         // Filtre light novels cujo titulo contem o trecho recebido.
         // Ordene por titulo.
         // Use findFirst.
-        return Optional.empty();
     }
 }

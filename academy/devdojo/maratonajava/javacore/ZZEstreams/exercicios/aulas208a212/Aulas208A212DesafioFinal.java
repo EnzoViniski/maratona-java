@@ -6,12 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -67,62 +62,88 @@ public class Aulas208A212DesafioFinal {
     }
 
     private static List<Integer> gerarDiasDaCampanha(int diaInicial, int diaFinal) {
+        return IntStream.rangeClosed(diaInicial, diaFinal)
+                .boxed().toList();
         // TODO 01:
         // Use IntStream.rangeClosed para gerar os dias da campanha.
         // Colete os dias em List<Integer>.
-        return List.of();
     }
 
     private static List<Integer> gerarMetasFibonacci(int quantidade) {
+        return Stream.iterate(new int[] {0,1}, n -> new int[] {n[1], n[0] + n[1]})
+                .limit(quantidade)
+                .map(n -> n[0])
+                .collect(Collectors.toList());
         // TODO 02:
         // Use Stream.iterate com int[] para gerar pares da sequencia de Fibonacci.
         // Limite pela quantidade recebida.
         // Transforme cada par no primeiro numero do par.
         // Colete em List<Integer>.
-        return List.of();
     }
 
     private static List<Integer> gerarCodigosDeSimulado(int quantidade, int menorCodigo, int maiorCodigo) {
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        return Stream.generate(() -> random.nextInt(menorCodigo, maiorCodigo))
+                .limit(quantidade)
+                .collect(Collectors.toList());
+
         // TODO 03:
         // Use ThreadLocalRandom.current().
         // Use Stream.generate para criar codigos entre menorCodigo e maiorCodigo.
         // Limite pela quantidade recebida e colete em List<Integer>.
-        return List.of();
     }
 
     private static boolean todosOsItensPossuemQuantidadePositiva() {
+        return lotes.stream()
+                .flatMap(Collection::stream)
+                .allMatch(n -> n.getQuantidade() > 0);
         // TODO 04:
         // Abra todos os lotes com flatMap.
         // Use allMatch para validar se toda quantidade e maior que zero.
-        return false;
     }
 
     private static Optional<ItemLeitura> buscarMaiorItemPorTag(String tag) {
+        return lotes.stream()
+                .flatMap(Collection::stream)
+                .filter(l -> l.getTags().contains(tag))
+                .max(Comparator.comparing(l -> l.getSubtotal()));
         // TODO 05:
         // Abra todos os lotes com flatMap.
         // Filtre itens que contem a tag recebida.
         // Use max com Comparator.comparing para buscar o maior subtotal.
-        return Optional.empty();
     }
 
     private static double calcularFaturamentoPorTag(String tag) {
+        return lotes.stream()
+                .flatMap(Collection::stream)
+                .filter(l -> l.getTags().contains(tag))
+                .mapToDouble(l -> l.getSubtotal())
+                .sum();
         // TODO 06:
         // Abra todos os lotes com flatMap.
         // Filtre itens que contem a tag recebida.
         // Transforme cada item em subtotal com mapToDouble.
         // Some com sum.
-        return 0;
     }
 
     private static int somarAvaliacoesAcimaDe(int notaMinima) {
+        return Arrays.stream(avaliacoesDaSemana)
+                .filter(n -> n > notaMinima)
+                .reduce(Integer::sum)
+                .getAsInt();
         // TODO 07:
         // Use Arrays.stream no array avaliacoesDaSemana.
         // Filtre notas maiores que notaMinima.
         // Some usando reduce.
-        return 0;
     }
 
     private static long contarLinhasDoArquivoCom(Path arquivo, String trecho) throws IOException {
+        try (Stream<String> lines = Files.lines(arquivo)) {
+            return lines.filter(l -> l.contains(trecho))
+                    .count();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
         // TODO 08:
         // Use Files.lines dentro de try-with-resources.
         // Conte as linhas que contem o trecho recebido.
@@ -131,6 +152,10 @@ public class Aulas208A212DesafioFinal {
 
     private static String criarResumoFinal(String tag, int diaInicial, int diaFinal, int quantidadeMetas,
                                            Path arquivo, String trecho) throws IOException {
+        List<Integer> dias = gerarDiasDaCampanha(diaInicial, diaFinal);
+        List<Integer> metas = gerarMetasFibonacci(quantidadeMetas);
+        double faturamento = calcularFaturamentoPorTag(tag);
+        long total =  contarLinhasDoArquivoCom(arquivo, trecho);
         // TODO 09:
         // Monte uma String no formato:
         // Tag: <tag> | dias: <dias> | metas: <metas> | faturamento: <total> | linhas: <total>
@@ -141,7 +166,7 @@ public class Aulas208A212DesafioFinal {
         // - O faturamento deve vir de calcularFaturamentoPorTag.
         // - As linhas devem vir de contarLinhasDoArquivoCom.
         // - Use String.valueOf ou o toString das listas, sem criar loops manuais.
-        return "";
+        return "Tag: "+tag+" | dias: "+dias+" | metas: "+metas+" | faturamento: "+faturamento+" | linhas: "+total+"";
     }
 
     private static class ItemLeitura {
