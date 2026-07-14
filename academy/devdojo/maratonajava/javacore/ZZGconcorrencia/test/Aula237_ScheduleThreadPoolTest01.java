@@ -22,8 +22,8 @@ public class Aula237_ScheduleThreadPoolTest01 {
         };
 
         executor.schedule(r, 5, TimeUnit.SECONDS);
-//        ScheduledFuture<?> scheduleWithFixedDelay = executor.scheduleWithFixedDelay(r, 1, 4, TimeUnit.SECONDS);
-        ScheduledFuture<?> scheduleWithFixedRate = executor.scheduleAtFixedRate(r, 1, 4, TimeUnit.SECONDS);
+        ScheduledFuture<?> scheduleWithFixedDelay = executor.scheduleWithFixedDelay(r, 1, 4, TimeUnit.SECONDS); // vai contar a partir de quando volta de dormir
+//        ScheduledFuture<?> scheduleWithFixedRate = executor.scheduleAtFixedRate(r, 1, 4, TimeUnit.SECONDS); // conta mesmo quando esta dormindo, quando acordar se ja tiver passadp p tempo ele faz
         executor.schedule(() -> {
             System.out.println("Cancelando scheduleWithFixedDelay");
             executor.shutdown();
