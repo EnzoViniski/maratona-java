@@ -97,6 +97,11 @@ public class Aulas218A223Exercicio02Medio {
     }
 
     private static void compararSequencialEParalelo(long n) {
+        long sequencial = medirTempoMs(() -> {LongStream.rangeClosed(1,n).sum();});
+        long paralela = medirTempoMs(() -> {LongStream.rangeClosed(1,n).parallel().sum();});
+
+        System.out.println("sequencial: "+sequencial+" ms");
+        System.out.println("paralela: "+paralela+" ms");
         // TODO 04:
         // Use medirTempoMs para cronometrar duas Runnables:
         // - Runnable sequencial: LongStream.rangeClosed(1, n).sum()
@@ -111,10 +116,14 @@ public class Aulas218A223Exercicio02Medio {
     }
 
     private static long medirTempoMs(Runnable acao) {
+        long init = System.currentTimeMillis();
+        acao.run();
+        long end = System.currentTimeMillis();
+        return (end - init);
         // TODO 05:
         // - Marque o tempo inicial com System.currentTimeMillis().
         // - Execute acao.run().
         // - Devolva (fim - inicio).
-        return 0;
+
     }
 }
