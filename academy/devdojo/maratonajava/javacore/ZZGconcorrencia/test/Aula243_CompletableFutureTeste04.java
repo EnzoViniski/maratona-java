@@ -9,6 +9,7 @@ public class Aula243_CompletableFutureTeste04 {
     public static void main(String[] args) {
         StoreServiceWithDiscount storeServiceWithDiscount = new StoreServiceWithDiscount();
         searchPrciesWithDiscount(storeServiceWithDiscount);
+//        searchPrciesWithDiscount(storeServiceWithDiscount);
     }
 
     private static void searchPrciesWithDiscount(StoreServiceWithDiscount service){
